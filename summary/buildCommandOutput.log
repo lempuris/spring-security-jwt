@@ -1,0 +1,73 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< io.javabrains:spring-security-jwt >------------------
+[INFO] Building spring-security-jwt 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ spring-security-jwt ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ spring-security-jwt ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ spring-security-jwt ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 8 source files with javac [debug parameters release 17] to target/classes
+[INFO] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/util/Jwtutil.java: Some input files use or override a deprecated API.
+[INFO] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/util/Jwtutil.java: Recompile with -Xlint:deprecation for details.
+[INFO] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/HelloResource.java: /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/HelloResource.java uses unchecked or unsafe operations.
+[INFO] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/HelloResource.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[11,72] cannot find symbol
+  symbol:   class WebSecurityConfigurerAdapter
+  location: package org.springframework.security.config.annotation.web.configuration
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[22,41] cannot find symbol
+  symbol: class WebSecurityConfigurerAdapter
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/util/Jwtutil.java:[32,55] cannot find symbol
+  symbol:   method parseClaimsJws(java.lang.String)
+  location: interface io.jsonwebtoken.JwtParserBuilder
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[30,136] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[35,9] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[37,31] cannot find symbol
+  symbol:   method authorizeRequests((requests)[...]ted())
+  location: variable csrf of type org.springframework.security.config.annotation.web.configurers.CsrfConfigurer<org.springframework.security.config.annotation.web.builders.HttpSecurity>
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[46,136] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[49,24] cannot find symbol
+  symbol:   variable super
+  location: class io.javabrains.springsecurityjwt.SecurityConfigurer
+[INFO] 8 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.864 s
+[INFO] Finished at: 2024-09-05T16:41:02Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project spring-security-jwt: Compilation failure: Compilation failure: 
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[11,72] cannot find symbol
+[ERROR]   symbol:   class WebSecurityConfigurerAdapter
+[ERROR]   location: package org.springframework.security.config.annotation.web.configuration
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[22,41] cannot find symbol
+[ERROR]   symbol: class WebSecurityConfigurerAdapter
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/util/Jwtutil.java:[32,55] cannot find symbol
+[ERROR]   symbol:   method parseClaimsJws(java.lang.String)
+[ERROR]   location: interface io.jsonwebtoken.JwtParserBuilder
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[30,136] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[35,9] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[37,31] cannot find symbol
+[ERROR]   symbol:   method authorizeRequests((requests)[...]ted())
+[ERROR]   location: variable csrf of type org.springframework.security.config.annotation.web.configurers.CsrfConfigurer<org.springframework.security.config.annotation.web.builders.HttpSecurity>
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[46,136] method does not override or implement a method from a supertype
+[ERROR] /ramdisk/code/src/main/java/io/javabrains/springsecurityjwt/SecurityConfigurer.java:[49,24] cannot find symbol
+[ERROR]   symbol:   variable super
+[ERROR]   location: class io.javabrains.springsecurityjwt.SecurityConfigurer
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
